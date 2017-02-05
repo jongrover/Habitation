@@ -1,0 +1,182 @@
+/* splashscreen element to animate */
+.fade-gallery{
+	position:relative;
+  height: 499px;
+}
+
+.fade-gallery img {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:auto;
+  border: 0;
+}
+
+/*.imagestack {
+  width:100%;
+  height:400px;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-name: fading;
+}*/
+
+.slogan1 {
+	position: relative;
+	animation-duration: 9s;
+	animation-name: slide1;
+	transition-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 4;
+}
+
+.slogan2 {
+	position: relative;
+	animation-duration: 9s;
+	animation-name: slide2;
+	transition-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 4;
+}
+
+.slogan3 {
+	position: relative;
+	animation-duration: 9s;
+	animation-name: slide3;
+	transition-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 4;
+}
+
+.splash1 {
+  animation-duration: 9s;
+  animation-name: fading1;
+  transition-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: 3;
+}
+.splash2 {
+  animation-duration: 9s;
+  animation-name: fading2;
+  transition-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+.splash3 {
+  animation-duration: 9s;
+  animation-name: fading3;
+  transition-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+
+/*.slider{
+
+}*/
+
+
+/* splashscreen keyframe */
+
+@keyframes slide1 {
+	0%   { opacity: 0; transform:translateX(20px)} /* 0 sec */
+  11%  { opacity: 0.5; transform:translateX(20px)}
+  22%  { opacity: 1; transform:translateX(20px)}
+  33%  { opacity: 1; transform:translateX(20px)}
+  44%  { opacity: 1; transform:translateX(20px)}
+  55%  { opacity: 1; transform:translateX(20px)}
+  66%  { opacity: 1; transform:translateX(20px)}
+  77%  { opacity: 1; transform:translateX(20px)}
+  88%  { opacity: 1; transform:translateX(20px)}
+  100% { opacity: 0; transform:translateX(20px)} /* 9 sec */
+
+}
+@keyframes slide2 {
+	0%   { opacity: 0; transform:translateX(400px)} /* 0 sec */
+  11%  { opacity: 0; transform:translateX(400px)}
+  22%  { opacity: 0; transform:translateX(300px)}
+  33%  { opacity: 1; transform:translateX(20px)}
+  44%  { opacity: 1; transform:translateX(20px)}
+  55%  { opacity: 1; transform:translateX(20px)}
+  66%  { opacity: 1; transform:translateX(20px)}
+  77%  { opacity: 1; transform:translateX(20px)}
+  88%  { opacity: 1; transform:translateX(20px)}
+  100% { opacity: 0; transform:translateX(20px)} /* 9 sec */
+
+}
+@keyframes slide3 {
+	0%   { opacity: 0; transform:translateX(750px)} /* 0 sec */
+  11%  { opacity: 0; transform:translateX(750px)}
+  22%  { opacity: 0; transform:translateX(750px)}
+  33%  { opacity: 0; transform:translateX(750px)}
+  44%  { opacity: 0; transform:translateX(250px)}
+  55%  { opacity: 1; transform:translateX(20px)}
+  66%  { opacity: 1; transform:translateX(20px)}
+  77%  { opacity: 1; transform:translateX(20px)}
+  88%  { opacity: 1; transform:translateX(20px)}
+  100% { opacity: 0; transform:translateX(20px)} /* 9 sec */
+
+}
+
+@keyframes fading1 {
+  0%   { opacity: 1; } /* 0 sec */
+  11%  { opacity: 1; }
+  22%  { opacity: 1; }
+  33%  { opacity: 0; }
+  44%  { opacity: 0; }
+  55%  { opacity: 0; }
+  66%  { opacity: 0; }
+  77%  { opacity: 0; }
+  88%  { opacity: 0; }
+  100% { opacity: 1; } /* 9 sec */
+}
+@keyframes fading2 {
+  0%   { opacity: 0; } /* 0 sec */
+  11%  { opacity: 0; }
+  22%  { opacity: 0; }
+  33%  { opacity: 1; }
+  44%  { opacity: 1; }
+  55%  { opacity: 1; }
+  66%  { opacity: 0; }
+  77%  { opacity: 0; }
+  88%  { opacity: 0; }
+  100% { opacity: 0; } /* 9 sec */
+}
+@keyframes fading3 {
+  0%   { opacity: 0; } /* 0 sec */
+  11%  { opacity: 0; }
+  22%  { opacity: 0; }
+  33%  { opacity: 0; }
+  44%  { opacity: 0; }
+  55%  { opacity: 0; }
+  66%  { opacity: 1; }
+  77%  { opacity: 1; }
+  88%  { opacity: 1; }
+  100% { opacity: 0; } /* 9 sec */
+}
+
+/* news element */
+.news {
+    animation-name:swade;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+
+/* news keyframe */
+
+@keyframes swade {
+  0% {color: #470089;transform:translateY(0px);}
+  50% {color: #9b0067;transform: translateY(2px);}
+  100% {color: #470089;transform:translateY(0px);}
+}

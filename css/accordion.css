@@ -1,0 +1,31 @@
+.accordion {
+  height: 580px; /* Image height must match this setting. */
+  width: 100%;
+  max-width: 1280px;
+  background: black;
+  margin: 80px auto 0 auto;
+}
+
+.accordion .panel {
+  padding: 0;
+  float: left;
+  overflow: hidden;
+  height: 100%;
+  transition: opacity 300ms;
+}
+
+.accordion .panel.expanded, .accordion .panel.collapsed:hover {
+  opacity: 1;
+}
+
+.accordion .panel.collapsed {
+  opacity: 0.75;
+}
+
+.accordion .panel img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: auto;
+  max-width: none;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+/*////////// FORMS //////////*/
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #cacaca;
+  border-left: 1px solid #cacaca;
+  border-right: 1px solid #cacaca;
+  border-bottom: 0;
+}
+
+#mc_embed_signup label {
+  display: inline-block;
+  font-size: .78rem;
+  margin-top: 6px;
+}
+
+#mc_embed_signup label:first-of-type {
+  margin-top: 0px;
+}

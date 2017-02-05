@@ -1,0 +1,162 @@
+/*////////// BOX STYLES //////////*/
+/*////////// foregrounds //////////*/
+
+.pic-fade {
+  position:relative;
+}
+
+.pic-fade:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 73%, rgba(255,255,255,0.65) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.65)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 73%,rgba(255,255,255,0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 73%,rgba(255,255,255,0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 73%,rgba(255,255,255,0.65) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 73%,rgba(255,255,255,0.65) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.pic-fade img {
+  width: 100%;
+  max-width: 100%;
+  display:block;
+}
+
+/*////////// Backgrounds //////////*/
+
+.site-background {
+  background: url(../images/site-background.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.site-background-fade {
+  background-size: cover;
+  background-attachment: fixed;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #ddf1ff 85%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ddf1ff 85%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#ddf1ff 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddf1ff',GradientType=0 ); /* IE6-9 */
+  z-index: -1;
+
+}
+
+.quote-background {
+  background-color: rgba(255,255,255,0.45);
+  padding: 1px 33px;
+  margin: 20px 0;
+}
+html {
+  min-height: 100%;
+  background: -moz-linear-gradient(top,  #febbbb 0%, #fe9090 45%, #ff5c5c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 ); /* IE6-9 */
+}
+.gray-fade {
+  background: rgb(229,229,229); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(99%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 99%); /* W3C */
+}
+
+.green-fade {
+background: #fbfff2; /* Old browsers */
+background: -moz-linear-gradient(top,  #fbfff2 0%, #e4f7dc 53%, #c8f7cd 92%, #87dbc6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #fbfff2 0%,#e4f7dc 53%,#c8f7cd 92%,#87dbc6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #fbfff2 0%,#e4f7dc 53%,#c8f7cd 92%,#87dbc6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfff2', endColorstr='#87dbc6',GradientType=0 ); /* IE6-9 */
+
+}
+.footer-fade {
+  background: #87dbc6;
+  background: -moz-linear-gradient(top,  rgba(135, 219, 198, 0.48) 0%, rgba(200, 247, 205, 0.32) 44%, rgba(200, 247, 205, 0.42) 44%, #e4f7dc 68%, rgba(246, 255, 229, 0.52) 100%);
+  background: -webkit-linear-gradient(top,  rgba(135, 219, 198, 0.48) 0%, rgba(200, 247, 205, 0.32) 44%, rgba(200, 247, 205, 0.42) 44%, #e4f7dc 68%, rgba(246, 255, 229, 0.52) 100%);
+  background: linear-gradient(to bottom,  rgba(135, 219, 198, 0.48) 0%,rgba(200, 247, 205, 0.32) 44%,rgba(200, 247, 205, 0.42) 44%, #e4f7dc 68%,rgba(246, 255, 229, 0.52) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87dbc6', endColorstr='#f6ffe5',GradientType=0 );
+}
+
+.footer-content-fill {
+  height: 284px;
+  background: #f6ffe5; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f6ffe5 0%, #e4f7dc 52%, #c8f7cd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #f6ffe5 0%,#e4f7dc 52%,#c8f7cd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #f6ffe5 0%,#e4f7dc 52%,#c8f7cd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6ffe5', endColorstr='#c8f7cd',GradientType=0 ); /* IE6-9 */
+}
+
+.workmenu {
+  background: url(../images/site-background.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.white-fill {
+  background: white;
+}
+
+.transparent {
+  background: rgba(255,255,255,0.65);
+}
+
+.row.transparent {
+  margin:60px;
+}
+
+main section.col-12.concept{
+background-color: rgba(255,255,255,0.40);
+}
+
+/*////////// Edge Effects //////////*/
+
+.all-round-edges {
+border-radius: 10px;
+}
+
+.round-edges {
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.form-round-edges {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.shadow {
+  box-shadow: 0px 2px 4px #000;
+}
+
+.all-product-fill-shadow {
+  box-shadow: inset 0px 0px 6px #87dbc6, 0px 2px 4px #000;
+}
+.latest-fill {
+  background-color: white;
+  box-shadow: inset 0px 0px 8px #af99ff, 0px 2px 4px #000;
+}
+.upcoming-fill {
+  background-color: white;
+  box-shadow: inset 0px 0px 8px #99c7ff, 0px 2px 4px #000;
+}
+.past-fill {
+  background-color: white;
+  box-shadow: inset 0px 0px 6px #99f7ff, 0px 2px 4px #000;
+}
+/*////////// Rules //////////*/
+
+.highlight-edge {
+  border-top: 1px solid white;
+}
+
+.left-rule {
+  border-left: 1px dotted #ccc;
+}
