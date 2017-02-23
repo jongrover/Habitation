@@ -30,11 +30,6 @@ img, form, table, iframe {
   margin-top: 20px;
 }
 
-img {
-  /*padding: 20px;*/
-  vertical-align: bottom;
-}
-
 img.splashscreen {
   padding: 0;
   margin: 0;
@@ -72,7 +67,10 @@ main section table {
 /*main div .sponsor {
   padding: 0 20px;
 }*/
-
+/*////////// indexpage //////////*/
+.shortinfo {
+;
+}
 /*////////// workpage //////////*/
 section.col-8 {
   margin-top: 80px;
@@ -93,15 +91,15 @@ main.container section.col-4 {
 }
 
 h2.subgenre {
-  margin: 20px;
+  margin: 10px;
 }
 
 div.feature section.col-4 a h5 {
-  margin: 10px 20px;
+  margin: 10px 10px;
 }
 
 div.feature section.col-4 a h6 {
-  margin: 5px 20px;
+  margin: 5px 10px;
 }
 
 .product-details {
@@ -142,12 +140,18 @@ padding: 1px 7px 1px 9px;
 margin: 0;
 }
 
-header row {
-  height: 56px;
+.table {
+  display: table;
+}
+
+.gallery-wrap {
+	padding-bottom: 49%;
+	height:0;
+	overflow:hidden;
 }
 
 #menu-bar {
-  height: 79px;
+  /*height: 79px;*/
   width: 100%;
   position: fixed;
   z-index: 5;

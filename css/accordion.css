@@ -23,9 +23,39 @@
 }
 
 .accordion .panel img {
-  display: inline-block;
+  display:block;
   vertical-align: bottom;
   width: auto;
   max-width: none;
+  cursor: pointer;
+}
+
+/*/////vertical accordion////*/
+
+.verticalaccordion {
+  height: 100%; /* Image height must match this setting. */
+  max-height:580px;
+  background: black;
+  margin: 80px auto 0 auto;
+}
+
+.verticalaccordion .panel {
+  padding: 0;
+  float: none;
+  overflow: hidden;
+  height: 580px;
+  transition: opacity 300ms;
+}
+
+.verticalaccordion .panel.expanded, .verticalaccordion .panel.collapsed:hover {
+  opacity: 1;
+}
+
+.verticalaccordion .panel.collapsed {
+  opacity: 0.75;
+}
+
+.verticalaccordion .panel img {
+  display:block;
   cursor: pointer;
 }

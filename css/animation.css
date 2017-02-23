@@ -1,7 +1,8 @@
 /* splashscreen element to animate */
 .fade-gallery{
 	position:relative;
-  height: 499px;
+  height: auto; /* 499px */
+	margin-bottom: 50px;
 }
 
 .fade-gallery img {
@@ -11,9 +12,10 @@
 	width:100%;
 	height:auto;
   border: 0;
+	overflow: hidden;
 }
 
-/*.imagestack {
+.imagestack {
   width:100%;
   height:400px;
   animation-iteration-count: infinite;
@@ -80,9 +82,9 @@
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   z-index: 1;
-}
+}*/
 
-/*.slider{
+.slider{
 
 }*/
 
@@ -90,7 +92,7 @@
 /* splashscreen keyframe */
 
 @keyframes slide1 {
-	0%   { opacity: 0; transform:translateX(20px)} /* 0 sec */
+	0%   { opacity: 0; transform:translateX(20px)}
   11%  { opacity: 0.5; transform:translateX(20px)}
   22%  { opacity: 1; transform:translateX(20px)}
   33%  { opacity: 1; transform:translateX(20px)}
@@ -99,11 +101,11 @@
   66%  { opacity: 1; transform:translateX(20px)}
   77%  { opacity: 1; transform:translateX(20px)}
   88%  { opacity: 1; transform:translateX(20px)}
-  100% { opacity: 0; transform:translateX(20px)} /* 9 sec */
+  100% { opacity: 0; transform:translateX(20px)}
 
 }
 @keyframes slide2 {
-	0%   { opacity: 0; transform:translateX(400px)} /* 0 sec */
+	0%   { opacity: 0; transform:translateX(400px)}
   11%  { opacity: 0; transform:translateX(400px)}
   22%  { opacity: 0; transform:translateX(300px)}
   33%  { opacity: 1; transform:translateX(20px)}
@@ -112,11 +114,11 @@
   66%  { opacity: 1; transform:translateX(20px)}
   77%  { opacity: 1; transform:translateX(20px)}
   88%  { opacity: 1; transform:translateX(20px)}
-  100% { opacity: 0; transform:translateX(20px)} /* 9 sec */
+  100% { opacity: 0; transform:translateX(20px)}
 
 }
 @keyframes slide3 {
-	0%   { opacity: 0; transform:translateX(750px)} /* 0 sec */
+	0%   { opacity: 0; transform:translateX(750px)}
   11%  { opacity: 0; transform:translateX(750px)}
   22%  { opacity: 0; transform:translateX(750px)}
   33%  { opacity: 0; transform:translateX(750px)}
@@ -125,12 +127,12 @@
   66%  { opacity: 1; transform:translateX(20px)}
   77%  { opacity: 1; transform:translateX(20px)}
   88%  { opacity: 1; transform:translateX(20px)}
-  100% { opacity: 0; transform:translateX(20px)} /* 9 sec */
+  100% { opacity: 0; transform:translateX(20px)}
 
 }
 
 @keyframes fading1 {
-  0%   { opacity: 1; } /* 0 sec */
+  0%   { opacity: 1; }
   11%  { opacity: 1; }
   22%  { opacity: 1; }
   33%  { opacity: 0; }
@@ -139,10 +141,9 @@
   66%  { opacity: 0; }
   77%  { opacity: 0; }
   88%  { opacity: 0; }
-  100% { opacity: 1; } /* 9 sec */
-}
+  100% { opacity: 1; }
 @keyframes fading2 {
-  0%   { opacity: 0; } /* 0 sec */
+  0%   { opacity: 0; }
   11%  { opacity: 0; }
   22%  { opacity: 0; }
   33%  { opacity: 1; }
@@ -151,10 +152,10 @@
   66%  { opacity: 0; }
   77%  { opacity: 0; }
   88%  { opacity: 0; }
-  100% { opacity: 0; } /* 9 sec */
+  100% { opacity: 0; }
 }
 @keyframes fading3 {
-  0%   { opacity: 0; } /* 0 sec */
+  0%   { opacity: 0; }
   11%  { opacity: 0; }
   22%  { opacity: 0; }
   33%  { opacity: 0; }
@@ -163,8 +164,8 @@
   66%  { opacity: 1; }
   77%  { opacity: 1; }
   88%  { opacity: 1; }
-  100% { opacity: 0; } /* 9 sec */
-}
+  100% { opacity: 0; }
+}*/
 
 /* news element */
 .news {

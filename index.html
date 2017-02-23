@@ -2,66 +2,65 @@
 <html class="site-background">
   <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Habitation is a nomadic site-specific project created by artist Hui-Ying Tsai. The project explores the concept of home and the modern utopia for human and animals by building a nesting structure in different locations with local materials. The design of each piece involves field study and reflects on the history, environment, and community of the site. Each piece functions as a social hub or habitat for people and animals. The work becomes a monument of the home building process. By collaborating with each community to make art, Project Habitation enhances awareness of the natural and cultural landscapes that responds to the presence of the place.">
   <meta name="keywords" content="site-specific art, site-responsive art, public art, community engagement, installation, land art, environmentally friendly art, eco art, nest, house, architecture, habitation, home, shelter, habitat, social practice, natural art, recycled material, nomadic ">
   <title>Project Habitation - A nomadic site-specific movement</title>
   <link rel="stylesheet" href="css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/main.js"></script>
   </head>
   <body>
     <!-- header -->
     <div id="menu-bar" class="container-fluid green-fade shadow">
-        <header class="container">
-          <div class="row">
-            <nav class="col-4 Logo-nav">
-             <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
-           </nav>
-        <nav class="col-4 main-nav">
-          <div class="row">
-            <div class="col-4">
-              <a href="projects.html">Works</a>
+      <header>
+        <div class="share-icon"><a href="#"><i class="fa fa-2x fa-share-alt-square" aria-hidden="true"></i></a></div>
+        <div class="mobile-nav"><a id="menu-icon" href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></div>
+        <div class="container table">
+          <nav class="logo-nav">
+            <a href="index.html"><img src="images/Logo.png" alt="Logo" class="logo"></a>
+          </nav>
+          <nav class="main-nav">
+            <div class="wrap">
+              <a href="projects.html"><span>Works</span></a>
+              <a href="about.html"><span>About</span></a>
+              <a href="contact.html"><span>Contact</span></a>
            </div>
-            <div class="col-4">
-              <a href="contact.html">Contact</a>
-           </div>
-            <div class="col-4">
-              <a href="about.html">About</a>
-           </div>
-          </div>
-      </nav>
-        <nav class="col-4 social-nav">
-        <a href="vr.html"><img class="vr" src="images/VRicon.svg" alt="Virtual Reality"></a>
-        <a href="#"><i class="fa fa-language" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/huiytsai/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/ProjHabitation" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/ProjectHabitationNow/" target="_blank">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        </nav>
-        </div><!-- .row -->
-          </header>
+          </nav>
+          <nav class="social-nav">
+            <a href="https://www.instagram.com/huiytsai/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/ProjHabitation" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/ProjectHabitationNow/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <!--<a href="vr.html"><img class="vr" src="images/VRicon.svg" alt="Virtual Reality"></a>-->
+          </nav>
+       </div>
+     </header>
         </div><!-- .container-fluid -->
     <!-- main -->
     <!-- splash image -->
   <main class="container">
       <div class="row">
         <div class="col-12">
-          <div class="fade-gallery">
-            <div class="slogan1">
-              CREATE.
-            </div>
-            <div class="slogan2">
-              CONNECT.
-            </div>
-            <div class="slogan3">
-              REFLECT.
-            </div>
-            <img class="splash1" src="images/splash1.jpg" alt="Photograph of Habitation No.3 Nido in Vistabella del Maestrat, Spain, 2016 " title="Habitation No.3 Nido(Nest)">
-            <img class="splash2" src="images/splash2.jpg" alt="Photograph of Habitation No.3 Nido in Vistabella del Maestrat, Spain, 2016" title="Habitation No.3 Nido(Nest)">
-            <img class="splash3" src="images/splash3.jpg" alt="Photograph of Habitation No.3 Nido in Vistabella del Maestrat, Spain, 2016" title="Habitation No.3 Nido(Nest)">
+          <div class="gallery-wrap">
+            <div class="fade-gallery">
+              <div class="slogan1">
+                CREATE.
+              </div>
+              <div class="slogan2">
+                CONNECT.
+              </div>
+              <div class="slogan3">
+                REFLECT.
+              </div>
+              <img class="splash1" src="images/splash1.jpg" alt="Photograph of Habitation No.3 Nido in Vistabella del Maestrat, Spain, 2016 " title="Habitation No.3 Nido(Nest)">
+              <img class="splash2" src="images/splash2.jpg" alt="Photograph of Habitation No.3 Nido in Vistabella del Maestrat, Spain, 2016" title="Habitation No.3 Nido(Nest)">
+              <img class="splash3" src="images/splash3.jpg" alt="Photograph of Habitation No.3 Nido in Vistabella del Maestrat, Spain, 2016" title="Habitation No.3 Nido(Nest)">
           </div>
+          </div><!-- gallery-wrap -->
         </div>
       </div>
-    <div class="row">
+    <div class="row shortinfo">
       <section class="col-12 concept">
         Habitation is a nomadic site-specific project created by artist Hui-Ying Tsai. The project explores the concept of home and the modern utopia for human and animals by building a nesting structure in different locations with local materials. The design of each piece involves field study and reflects on the history, environment, and community of the site. Each piece functions as a social hub or habitat for people and animals. The work becomes a monument of the home building process. By collaborating with each community to make art, Project Habitation enhances awareness of the natural and cultural landscapes that responds to the presence of the place.
       </section>
@@ -71,10 +70,13 @@
         </div>
           <ul class="newscontent">
             <li>
-            2017 March 1st. - 31st, Habitation will participated in the First Friday Residency at Jamaca Center for Art and Learning in NYC, USA, followed by the Opening Event on April 7th.<br>
+            Due to schedule conflict, Habitation will postpone the participation of the First Friday Residency at Jamaca Center for Art and Learning in NYC, USA, in March. New dates will be announced later in the summer.<br>
             </li>
             <li>
-            2017 July 3rd. - 28th, Habitation is awarded a residency fellowship at The Millay Colony for the Arts in Austerlitz, NY, USA.
+            2017 April 13th. - May 8th. Habitation will be part of the Cheng Long Wetlands International Art Project in Yunlin County, Taiwan.
+            </li>
+            <li>
+            2017 July 3rd. - 28th. Habitation is awarded a residency fellowship at The Millay Colony for the Arts in Austerlitz, NY, USA.
             </li>
           </ul>
       </section>
@@ -95,18 +97,22 @@
         </div>
       </section>
       <section class="col-4 footer-content-fill">
-        <h4>Get BInvolved</h4>
+        <h4>Get Involved</h4>
         <a href="#">Collabration</a><br>
         <a href="#">Media Requests</a><br><br><br>
         <h4>Follow Us</h4>
+          <div class="set-table">
             <div class="followbotton">
               <a>
                 <div class="fb-follow" data-href="https://www.facebook.com/ProjectHabitationNow" data-layout="button" data-size="large" data-show-faces="true"></div>
               </a>
             </div><br>
+          <div class="set-table">
             <div class="followbotton">
               <a href="https://twitter.com/ProjHabitation" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br>
             </div>
+          </div>
+          <div class="set-table">
             <div class="followbotton">
               <a>
               <style>.ig-b- { display: inline-block; }
@@ -118,6 +124,7 @@
               <a href="https://www.instagram.com/huiytsai/?ref=badge" class="ig-b- ig-b-32"><img src="//badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram" /></a>
               </a><br>
           </div>
+        </div> <!-- set-table -->
       </section>
       <section class="col-4 footer-content-fill">
         <!-- Begin MailChimp Signup Form -->

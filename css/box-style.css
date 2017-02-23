@@ -160,3 +160,28 @@ border-radius: 10px;
 .left-rule {
   border-left: 1px dotted #ccc;
 }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+}
+
+.thumbnails {
+  margin: 0 -1%;
+}
+
+.thumbnail {
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 1%; /* must match the negative margin on thumbnails. */
+  /* background: yellow;
+  border: 1px dashed #ccc; */
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

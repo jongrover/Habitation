@@ -21,6 +21,7 @@
   line-height: 0;
 }
 
+
 [class*="col-"] {
   float: left;
   margin: 0 0 2% 2%;
@@ -42,3 +43,21 @@
 .col-10 { width: 83%;   }
 .col-11 { width: 91.5%; }
 .col-12 { width: 100%;  }
+
+/*[class*="col_"] {
+  float: left;
+  margin: 1%;
+}
+
+.col_1  { width: 6.333%;  }
+.col_2  { width: 14.666%; }
+.col_3  { width: 23%;     }
+.col_4  { width: 31.333%; }
+.col_5  { width: 39.667%; }
+.col_6  { width: 48%;     }
+.col_7  { width: 56.333%; }
+.col_8  { width: 64.667%; }
+.col_9  { width: 73%;     }
+.col_10 { width: 81.334%; }
+.col_11 { width: 89.667;  }
+.col_12 { width: 98%;     }*/
