@@ -103,16 +103,6 @@ a:active {}
   content:"\201C";}
 .quote:after {
   content:"\201D";}
-.author {
-font-size: 1em;
-color: #555;
-}
-.author:before {
-  content:"\2014";}
-
-p .quote .author {
-  text-align: center;
-}
 
 .proposaltext {
   font-size: 0.9em;

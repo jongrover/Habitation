@@ -48,13 +48,8 @@ main section.col-6 {
   margin-bottom: 0;
 }
 
- }
-section.comingsoon {
-  margin: 80px;
-}
-
 .aboutbox {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 section {
@@ -73,10 +68,12 @@ main section table {
 }
 /*////////// workpage //////////*/
 section.col-8 {
-  margin-top: 80px;
+  margin-top: 20px;
   height: auto;
 }
-
+main section.comingsoon {
+  margin: 60px 20px;
+}
 main section.proposaltext {
   padding: 0;
 }
