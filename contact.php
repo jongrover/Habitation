@@ -25,7 +25,7 @@
             <div class="wrap">
               <a href="projects.html"><span>Works</span></a>
               <a href="about.html"><span>About</span></a>
-              <a href="contact.html" class="active"><span>Contact</span></a>
+              <a href="contact.php" class="active"><span>Contact</span></a>
            </div>
           </nav>
           <nav class="social-nav">
@@ -42,14 +42,38 @@
     <!-- contact form -->
     <div class="row">
       <section class="col-6 white-fill shadow form-round-edges">
-        <form action="#" method="post">
-          <input type="text" name="first_name" placeholder="First Name" required>
-          <input type="text" name="last_name" placeholder="Last Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="tel" placeholder="Phone">
-          <textarea name="message" rows="8" cols="10" placeholder="Message" required></textarea>
-          <input type="submit" value="Submit">
-        </form>
+        <?php if (is_null($_GET['s'])) { ?>
+          <form action="mailer.php" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone (optional)">
+            <textarea name="message" rows="8" cols="10" placeholder="Message" required></textarea>
+            <div>
+              <img class="verif_img" src="verificationimage.php?<?php echo rand(0,9999);?>" alt="verification image"><input type="text" name="verify" class="verif_box" placeholder="verify you're human by typing the numbers shown" required>
+            </div>
+            <input type="submit" value="Submit">
+          </form>
+        <?php } else {
+          $s = $_GET['s'];
+          if ($s == 'success') {
+            echo '<div class="status_message success">Thank you. Your message was sent successfully!</div>';
+          } elseif ($s == 'error') {
+            echo '<div class="status_message error">There was an error sending your message. Please make sure you fill in all the fields correctly! Or if issues persist you can manually send an email to: info@projecthabitation.org</div><form action="mailer.php" method="post">
+              <input type="text" name="first_name" placeholder="First Name" required>
+              <input type="text" name="last_name" placeholder="Last Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="tel" name="phone" placeholder="Phone (optional)">
+              <textarea name="message" rows="8" cols="10" placeholder="Message" required></textarea>
+              <div>
+                <img class="verif_img" src="verificationimage.php?<?php echo rand(0,9999);?>" alt="verification image"><input type="text" name="verify" class="verif_box" placeholder="verify you\'re human by typing the numbers shown" required>
+              </div>
+              <input type="submit" value="Submit">
+            </form>';
+          } else {
+            echo '<div class="status_message error">Error: Status Unrecognized! If issues persist you can manually send an email to: info@projecthabitation.org</div>';
+          }
+        } ?>
      </section>
      <section class="col-6">
        Thank you for visiting Project Habitation!<br>If you like to share with us your thoughts, ideas, or comments, please don't hesitate to contact us. We will get back to you as soon as possible!<br>Let's create and connect!

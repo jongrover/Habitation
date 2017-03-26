@@ -19,3 +19,36 @@ input, textarea {
 #mc_embed_signup label:first-of-type {
   margin-top: 0px;
 }
+
+.verif_box, .verify_img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.verif_box {
+  width: 85%;
+}
+
+.verif_img {
+  width: 15%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.status_message {
+  font-size: 1em;
+  font-weight: normal;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+}
+
+.status_message.success {
+  border-color: green;
+  color: green;
+}
+
+.status_message.error {
+  border-color: red;
+  color: red;
+}
