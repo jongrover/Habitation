@@ -23,7 +23,7 @@
 	$verify 	    = 	$_POST['verify'];
 
 	// setup email header
-	$header = "From: ".$email;
+	$header = "From: ".$sendTo."\r\n"."Reply-To: ".$email."\r\n"."X-Mailer: PHP/".phpversion();
 
 	// construct email body
 	$body =	"Name: ".$first_name." ".$last_name."\r\n".
