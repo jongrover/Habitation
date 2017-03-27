@@ -10,6 +10,23 @@ input, textarea {
   border-bottom: 0;
 }
 
+#mc_embed_signup div#mce-responses {
+  padding: 0;
+  margin: 0;
+}
+
+#mc_embed_signup div.response {
+  padding: 0;
+  margin: 0 0 15px;
+  font-weight: normal;
+  width: 100%;
+  font-size: 0.85em;
+}
+
+#mc_embed_signup #mce-success-response, #mc_embed_signup #mce-error-response {
+  color: #000;
+}
+
 #mc_embed_signup label {
   display: inline-block;
   font-size: .78rem;
