@@ -21,7 +21,7 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   animation-name: fading;
-}*/
+}
 
 .slogan1 {
 	position: relative;
@@ -82,11 +82,7 @@
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   z-index: 1;
-}*/
-
-.slider{
-
-}*/
+}
 
 
 /* splashscreen keyframe */
@@ -142,6 +138,7 @@
   77%  { opacity: 0; }
   88%  { opacity: 0; }
   100% { opacity: 1; }
+}
 @keyframes fading2 {
   0%   { opacity: 0; }
   11%  { opacity: 0; }
@@ -165,14 +162,14 @@
   77%  { opacity: 1; }
   88%  { opacity: 1; }
   100% { opacity: 0; }
-}*/
+}
 
 /* news element */
 .news {
-    animation-name:swade;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-  }
+  animation-name:swade;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
 
 /* news keyframe */
 
