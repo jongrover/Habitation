@@ -2,10 +2,28 @@ $(function () {
 
   var $accordion = $('.accordion'),
       $panel = $accordion.find('.panel'),
+      $img = $panel.find('img'),
       panelCount = $panel.length,
-      panelWidth = 100 / panelCount;
-      accordionWidth = $accordion.width(),
-      animateSpeed = 400;
+      panelWidth = 100 / panelCount,
+      animateSpeed = 400,
+      maxAccordionWidth = 1280,
+      accordionWidth,
+      imgWidth,
+      originImgWidth = [];
+
+  $img.each(function(i,img) {
+    originImgWidth[i] = $(img).width();
+  });
+
+  function setWidths() {
+    accordionWidth = $accordion.width();
+    $img.each(function(i,img) {
+      imgWidth = (originImgWidth[i] * accordionWidth) / maxAccordionWidth;
+      $(img).width(imgWidth);
+    });
+  }
+  setWidths();
+  $(window).resize(setWidths);
 
   $panel.css({'width': panelWidth+"%"});
 
@@ -13,31 +31,11 @@ $(function () {
     var $selPanel = $(this),
         $nonSelPanels = $panel.not($selPanel),
         $selImg = $selPanel.find('img'),
+        $nonSelImg = $img.not($selImg),
         selImgWidth = $selImg.width(),
-        nonSelPanelsWidth = (accordionWidth - selImgWidth) / (panelCount - 1);
-    $nonSelPanels.removeClass('expanded').addClass('collapsed').animate({'width': nonSelPanelsWidth}, animateSpeed);
-    $selPanel.removeClass('collapsed').addClass('expanded').animate({'width': selImgWidth}, animateSpeed);
+        selPanelPercent = ((selImgWidth / accordionWidth) * 100),
+        nonSelPanelsPercent = ((100 - selPanelPercent) / (panelCount - 1));
+    $nonSelPanels.removeClass('expanded').addClass('collapsed').animate({'width': nonSelPanelsPercent+"%"}, animateSpeed);
+    $selPanel.removeClass('collapsed').addClass('expanded').animate({'width': selPanelPercent+"%"}, animateSpeed);
   });
 });
- /*/////verticalaccordion//////*/
- $(function () {
-
-   var $verticalaccordion = $('.verticalaccordion'),
-       $panel = $verticalaccordion.find('.panel'),
-       panelCount = $panel.length,
-       panelHeight = 100 / panelCount;
-       verticalaccordionHeight = $verticalaccordion.height(),
-       animateSpeed = 400;
-
-   $panel.css({'height': panelHeight+"%"});
-
-   $panel.click(function () {
-     var $selPanel = $(this),
-         $nonSelPanels = $panel.not($selPanel),
-         $selImg = $selPanel.find('img'),
-         selImgHeight = $selImg.height(),
-         nonSelPanelsHeight = (verticalaccordionHeight - selImgHeight) / (panelCount - 1);
-     $nonSelPanels.removeClass('expanded').addClass('collapsed').animate({'height': nonSelPanelsHeight}, animateSpeed);
-     $selPanel.removeClass('collapsed').addClass('expanded').animate({'height': selImgHeight}, animateSpeed);
-   });
- });
