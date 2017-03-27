@@ -1,5 +1,5 @@
 .accordion {
-  height: 580px; /* Image height must match this setting. */
+  height: auto; /* All image heights must be the same */
   width: 100%;
   max-width: 1280px;
   background: black;
