@@ -86,7 +86,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfff2', end
 }
 
 .footer-content-fill {
-  height: 284px;
+  height: 100%;
+  min-height: 284px;
   background: #f6ffe5; /* Old browsers */
   background: -moz-linear-gradient(top,  #f6ffe5 0%, #e4f7dc 52%, #c8f7cd 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #f6ffe5 0%,#e4f7dc 52%,#c8f7cd 100%); /* Chrome10-25,Safari5.1-6 */
