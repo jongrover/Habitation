@@ -76,7 +76,14 @@
         } ?>
      </section>
      <section class="col-6">
-       Thank you for visiting Project Habitation!<br>If you like to share with us your thoughts, ideas, or comments, please don't hesitate to contact us. We will get back to you as soon as possible!<br>Let's create and connect!
+      <span lang="en">
+      Thank you for visiting Project Habitation!<br>If you like to share with us your thoughts, ideas, or comments, please don't hesitate to contact us. We will get back to you as soon as possible!<br>Let's create and connect!
+      </span>
+      <br>
+      <span lang="zh">
+      謝謝您的造訪棲地計劃。<br>
+      假如您有任何想法或合作計畫，請不吝與我們聯繫，我們會盡快回覆您的來信！<br>
+      </span>
      </section>
    </div>
  </main>
@@ -87,7 +94,7 @@
      <h4>Correspondence</h4>
      <a><img id="Hui" src="images/Hui.jpg" alt="Hui"></a>
 
-     <a href="http://www.huiytsai.com" target="_blank">Hui-Ying Tsai</a><br>
+     <a href="http://www.huiytsai.com" target="_blank">Hui-Ying Tsai 蔡慧盈</a><br>
      <small>Artist/Director</small>
      <div class="clear">
        <a href="tel:+14157561222"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+1 415 756 1222</a><br>
