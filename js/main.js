@@ -1,5 +1,7 @@
 $(function() {
 
+  // Mobile Navigation
+
   var $window = $(window),
       $mainNav = $('.main-nav'),
       $mobileLink = $('.mobile-nav a'),
@@ -40,5 +42,9 @@ $(function() {
     event.preventDefault();
     $socialNav.slideToggle(400);
   });
+
+  // Language Switching
+
+  
 
 });
