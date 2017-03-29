@@ -64,7 +64,7 @@ main section table {
 }*/
 /*////////// indexpage //////////*/
 .shortinfo {
-;
+
 }
 /*////////// workpage //////////*/
 section.col-8 {
@@ -161,6 +161,15 @@ margin: 0;
   float: left;
   width: 35%;
   margin: 0px 20px 20px 0;
+}
+
+.footer-content-fill:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
 }
 
 .clear {
