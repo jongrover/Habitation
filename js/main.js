@@ -8,8 +8,8 @@ $(function() {
       $socialNav = $('.social-nav'),
       $shareLink = $('.share-icon a'),
       screenWidth = $window.outerWidth(),
-      breakPoint1 = 713,
-      breakPoint2 = 662;
+      breakPoint1 = 728,
+      breakPoint2 = 677;
 
   function checkSize() {
     if (screenWidth < breakPoint1) {
@@ -44,7 +44,12 @@ $(function() {
   });
 
   // Language Switching
+  $('[lang="zh"]').hide();
 
-  
+  $('.mobile-language-icon, .desktop-language-icon').click(function (event) {
+    event.preventDefault();
+    $('[lang="zh"]').toggle();
+    $('[lang="en"]').toggle();
+  });
 
 });
