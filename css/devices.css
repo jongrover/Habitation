@@ -1,7 +1,7 @@
 
 .mobile-nav {
   position:fixed;
-  top: 17px;
+  top: 14px;
   left: 5%;
   z-index: 2;
   display: none;
@@ -9,10 +9,19 @@
 
 .share-icon {
   position:fixed;
-  top: 17px;
+  top: 14px;
   right: 5%;
   z-index: 2;
   display: none;
+}
+
+.main-nav a.mobile-language-icon {
+  display: none;
+  padding: 0;
+}
+
+.social-nav a.desktop-language-icon {
+  display: inline;
 }
 
 .thumbnail { width: 50%;}
@@ -97,7 +106,7 @@
   }
 
   .main-nav {
-    width: 50%;
+    width: 69%;
   }
 
   .main-nav a {
@@ -113,6 +122,16 @@
   a.active {
     color: rgb(79, 104, 140);
     background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .main-nav a.mobile-language-icon {
+    display: inline-block;
+    font-size: 1.6em;
+    padding-top: 3px;
+  }
+
+  .social-nav a.desktop-language-icon {
+    display: none;
   }
 
 }
@@ -167,6 +186,12 @@
     background: -webkit-linear-gradient(top,  rgba(135, 219, 198, 0.48) 0%, rgba(200, 247, 205, 0.32) 44%, rgba(200, 247, 205, 0.42) 50%, rgba(135, 219, 198, 0.48) 100%);
     background: linear-gradient(to bottom,  rgba(135, 219, 198, 0.48) 0%,rgba(200, 247, 205, 0.32) 44%,rgba(200, 247, 205, 0.42) 50%, rgba(135, 219, 198, 0.48) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87dbc6', endColorstr='#f6ffe5',GradientType=0 );
+  }
+
+  .main-nav a.mobile-language-icon {
+    display: block;
+    font-size: 2em;
+    padding-top: 0;
   }
 
 }
