@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Habitation is a nomadic site-specific project created by artist Hui-Ying Tsai. The project explores the concept of home and the modern utopia for human and animals by building a nesting structure in different locations with local materials. The design of each piece involves field study and reflects on the history, environment, and community of the site. Each piece functions as a social hub or habitat for people and animals. The work becomes a monument of the home building process. By collaborating with each community to make art, Project Habitation enhances awareness of the natural and cultural landscapes that responds to the presence of the place.">
     <meta name="keywords" content="site-specific art, site-responsive art, public art, community engagement, installation, land art, environmentally friendly art, eco art, nest, house, architecture, habitation, home, shelter, habitat, social practice, natural art, recycled material, nomadic ">
+    <meta property="og:url" content="https://projecthabitation.org/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Project Habitation" />
+    <meta property="og:description" content="Nomadic site-specific project for comunity building." />
+    <meta property="og:image" content="https://projecthabitation.org/images/PHshare.jpg" />
     <title>Project Habitation - A nomadic site-specific movement</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=58db13203dec30001259e668&product=inline-share-buttons"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </head>
