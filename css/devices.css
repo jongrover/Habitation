@@ -217,6 +217,9 @@
   .fa-phone, .fa-envelope {
     display: none;
   }
+  iframe.map {
+    height: 280px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
