@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=58db13203dec30001259e668&product=inline-share-buttons"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
