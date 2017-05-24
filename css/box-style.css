@@ -186,3 +186,8 @@ body {
   border: 1px solid #ccc;
   padding: 10px;
 }
+/*///////WIP gallery////*/
+#links img {
+  width: auto;
+  height: auto;
+}
