@@ -175,3 +175,7 @@ margin: 0;
 .clear {
   clear: both;
 }
+
+.novideo h2{
+  margin-top: 0;
+}

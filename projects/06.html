@@ -39,7 +39,7 @@
           <nav class="social-nav">
             <a href="https://www.instagram.com/huiytsai/" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="https://twitter.com/ProjHabitation" target="_blank" title="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/ProjectHabitationNow/" target="_blank" title="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/HuiYingTsaiArt/" target="_blank" title="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
             <a href="#" title="switch language" class="desktop-language-icon"><i class="fa fa-language" aria-hidden="true"></i></a>
             <!--<a href="vr.html"><img class="vr" src="images/VRicon.svg" alt="Virtual Reality"></a>-->
           </nav>
