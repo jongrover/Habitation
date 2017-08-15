@@ -23,7 +23,7 @@
 }*/
 
 .accordion .panel img {
-  display:block;
+  display:none;
   vertical-align: bottom;
   width: auto;
   max-width: none;
