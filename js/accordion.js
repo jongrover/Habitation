@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   $(window).on('load', function () {
 
-    $('.load-animation').hide();
+    $('.load-animation').hide().remove();
     $img.show();
 
     $img.each(function(i,img) {
