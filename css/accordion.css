@@ -30,6 +30,10 @@
   cursor: pointer;
 }
 
+.accordion .panel img.load-animation {
+  display: block;
+}
+
 /*/////vertical accordion////*/
 
 .verticalaccordion {
