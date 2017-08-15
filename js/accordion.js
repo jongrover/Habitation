@@ -12,9 +12,11 @@ $(document).ready(function () {
       originImgWidth = [];
 
   $img.hide();
+  $accordion.append('<img src="../images/loading_image.gif" class="load-animation" style="display: block; margin: 0 auto; width: 200px">');
 
   $(window).on('load', function () {
 
+    $('.load-animation').hide();
     $img.show();
 
     $img.each(function(i,img) {
