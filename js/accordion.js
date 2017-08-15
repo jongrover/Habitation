@@ -17,7 +17,7 @@ $(document).ready(function () {
   $(window).on('load', function () {
 
     $('.load-animation').hide().remove();
-    $img.css({'display': 'block'})show();
+    $img.show();
 
     $img.each(function(i,img) {
       originImgWidth[i] = $(img).width();
