@@ -23,15 +23,11 @@
 }*/
 
 .accordion .panel img {
-  display:none;
+  display:block;
   vertical-align: bottom;
   width: auto;
   max-width: none;
   cursor: pointer;
-}
-
-.accordion .panel img.load-animation {
-  display: block;
 }
 
 /*/////vertical accordion////*/
