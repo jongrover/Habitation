@@ -1,4 +1,4 @@
-$(function () {
+$(window).on('load', function () {
 
   var $accordion = $('.accordion'),
       $panel = $accordion.find('.panel'),
@@ -38,4 +38,5 @@ $(function () {
     $nonSelPanels.removeClass('expanded').addClass('collapsed').animate({'width': nonSelPanelsPercent+"%"}, animateSpeed);
     $selPanel.removeClass('collapsed').addClass('expanded').animate({'width': selPanelPercent+"%"}, animateSpeed);
   });
+
 });
